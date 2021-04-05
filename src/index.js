@@ -5,7 +5,7 @@ import store from './store';
 import { Provider } from 'react-redux';
 import axios from 'axios';
 
-// axios.defaults.withCredentials = true;
+axios.defaults.withCredentials = true;
 // axios.defaults.baseURL = 
 
 ReactDOM.render(
