@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as AI from "react-icons/ai";
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector }  from 'react-redux';
 import { loginPost } from '../actions/user';
 
@@ -9,11 +9,12 @@ function Login() {
 
     const dispatch = useDispatch();
     const state = useSelector(state => state.user);
-    
+    const history = useHistory();
     const [showPassword, setShowPassword] = useState(false);
     const [user, setUser] = useState({email: "", password: ""})
     const handleShowPassword = () => {
         setShowPassword(!showPassword);
+        history.push("/");
     }
      
 

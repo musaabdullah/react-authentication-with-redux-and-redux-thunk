@@ -28,9 +28,9 @@ function Home() {
 
             {products && 
                 products.map((item) => {
-                    return <div className="col-md-4 card m-3" style={{width: "320px"}}>
+                    return <div className="col-md-4 card p-0 m-3" style={{width: "320px"}}>
                     
-                            <img src={item.image} style={{width: "300px", height: "200px"}}/>
+                            <img src={item.image} className="p-0" style={{width: "317px", height: "200px"}}/>
                             <div className="card-body">
                                 <div className="card-title">
                                     {item.name}
